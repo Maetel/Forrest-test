@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
 
 import './AboutPage.css';
-
-const getImageOf = (str) =>
-  `https://github.com/Maetel/chtpage-images/blob/master/${str}.jpg?raw=true`;
+import FetchImage from '../../scripts/FetchImage';
 
 const AboutPage = (props) => {
   return (
     <div className="about-page" id="about-page">
       {/* ABOUT PAGE */}
-      <img src={getImageOf('curri2')} alt="" srcset="" />
+      <img src={FetchImage('about1')} alt="" srcset="" />
     </div>
   );
 };

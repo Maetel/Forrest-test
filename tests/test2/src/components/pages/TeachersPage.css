@@ -1,2 +1,7 @@
 .teachers-page {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    width:70%;
+    margin : 0 15%;
 }

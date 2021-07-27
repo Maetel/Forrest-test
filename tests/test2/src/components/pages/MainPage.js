@@ -2,6 +2,7 @@ import { difference } from 'lodash';
 import React, { useState, useEffect } from 'react';
 
 import './MainPage.css';
+import FetchImage from '../../scripts/FetchImage';
 
 const images = {
   guitar:
