@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { debounce } from 'lodash';
 
-import './MainPage.css';
+import './_MainPage.css';
 
 const ListItemWrapper = (props) => {
   return (

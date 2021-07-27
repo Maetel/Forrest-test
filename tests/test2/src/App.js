@@ -3,6 +3,7 @@ import './App.css';
 
 import Navigation from './components/Navigation/Navigation';
 import MainPage from './components/pages/MainPage';
+import _MainPage from './components/pages/_MainPage';
 import AboutPage from './components/pages/AboutPage';
 import HobbyPage from './components/pages/HobbyPage';
 import ProPage from './components/pages/ProPage';
