@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      width:100%;
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    background-color: #745D4A;
+    padding : 30px 0px;
+    margin:0px;
+    text-align: center;
+    width:100%;
+  }
+  
+  .header h1{
+      color:#eee;
+      margin:0;
+      font-family: 'Nanum Myeongjo', serif;
+  }
+  .header p {
+      color:#999;
+      margin:0;
+      font-size:22px;
+      font-family: 'Nanum Myeongjo', serif;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: #657D51;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #navbar span {
+  }
+  
+  #navbar a {
+      
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    width:80px;
+  }
+  
+  #navbar a:hover {
+    background-color: #DCC456;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.content-container {
+    display:flex;
+    justify-content: center;
+    padding: 0px 16px;
+    margin: 0px;
+}
+
+.content-container ul {
+    list-style-type: none;
+    padding:0px;
+    width:980px;
+    margin-top: 0px;
+}
+
+.content-container h3 {
+    text-decoration: underline;
+    margin:10px 0px;
+}
+
+
+  .about {
+    padding: 10px 12px;
+    width:700px;
+  }
+  
+  .image-about-container {
+      overflow:hidden;
+      text-align: center;
+  }
+
+  .image-about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .content-container {
+        padding:3px;
+      overflow: auto;
+    }
+    .content-container ul {
+        
+        width:90%;
+    }
+
+    #navbar a {
+        padding: 10px 5px;
+      }
+  }
+
+footer {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    width: 100px;
+    height:100px;
+    border-radius: 50px;
+    align-items: flex-end;
+    transition: 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.footer__icon {
+    color:#fff;
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    transition: 2s;
+}
+
+.hide {
+    display:none;
+}
+
+footer:hover {
+    background-color: rgba(0,0,0,0.9);
+    height:400px;
+}
+
+footer:hover + .footer__icon {
+    display:none;
+    color:red;
+}
+
+/*   
+  .sticky + .content {
+    padding-top: 60px;
+  } */

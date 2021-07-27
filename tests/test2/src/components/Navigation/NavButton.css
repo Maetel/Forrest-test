@@ -1,0 +1,11 @@
+
+.nav-button {
+    color: transparent;
+    width: 40px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+.nav-button:hover {
+    background-color: blue;
+}
