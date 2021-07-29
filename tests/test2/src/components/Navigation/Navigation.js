@@ -39,15 +39,25 @@ const Navigation = (props) => {
     return () => window.removeEventListener('resize', updateDrawerIcon);
   }, []);
 
+  const logo =
+    'https://github.com/MrChoooo/forrest-images/blob/master/logo.png?raw=true';
+  const logoUrl =
+    'url("https://github.com/MrChoooo/forrest-images/blob/master/logo.png?raw=true")';
+
   return (
     <React.Fragment>
       {drawerIsOpen && <Backdrop onClick={toggleDrawer} />}
 
       <header className="navigation-header">
         <div className="navigation" id="navigation">
-          <NavLink to="/" className="main-logo">
-            <h3>FORREST</h3>
-          </NavLink>
+          <div className="logo-wrapper">
+            {/* <NavLink to="/" className="main-logo">
+              <h3>FORREST</h3>
+            </NavLink> */}
+            <NavLink to="/" className="main-logo">
+              <img className="logo" src={logo}></img>
+            </NavLink>
+          </div>
 
           <button className="navigation-btn" onClick={toggleDrawer}>
             <i class={`fas fa-bars fa-${drawerIconSize}`} id="drawer-icon"></i>
